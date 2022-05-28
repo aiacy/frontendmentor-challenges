@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  
+  <main>
+    <section class="scoreboard">
+      <div class="title">
+        <p>rock</p>
+        <p>paper</p>
+        <p>Scissors</p>
+        <p>lizard</p>
+        <p>Spock</p>
+      </div>
+
+      <div class="score">
+        <p>Score</p>
+        <p>12</p>
+      </div>
+    </section>
+
+    <section class="gameplay">
+      <div class="top">
+        <div class="scissors">
+        <button><img src="./images/icon-scissors.svg" alt=""></button>
+      </div>
+    </div>
+      <div class="middle">
+        <div class="spock">
+          <button><img src="./images/icon-spock.svg" alt=""></button>
+        </div>
+        <div class="paper">
+          <button><img src="./images/icon-paper.svg" alt=""></button>
+        </div>
+        
+      </div>
+      <div class="bottom">
+        <div class="lizard">
+          <button><img src="./images/icon-lizard.svg" alt=""></button>
+        </div>
+        <div class="rock">
+          <button><img src="./images/icon-rock.svg" alt=""></button>
+        </div>
+        
+      </div>
+      
+    </section>
+
+    <footer class="rules">
+      <a href="#">Rules</a>
+    </footer>
+  </main>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      font-family: 'Barlow Semi Condensed', sans-serif;
+      color: white;
+      text-transform: uppercase;
+    }
+    main{
+      background-image: radial-gradient( hsl(214, 47%, 23%),hsl(237, 49%, 15%) );
+      display: grid;
+      height: 100vh;
+      width: 100%;
+      align-items: center;
+      justify-items: center;
+      justify-content: center;
+    }
+
+    section.scoreboard{
+      border: 1px solid hsl(217, 16%, 45%);
+      display: grid;
+      grid-template-columns: 5fr 1fr;
+      padding: 1rem;
+      border-radius: 1rem;
+    }
+
+    section.scoreboard .score{
+      background-color: white;
+      border-radius: .5rem;
+      display: grid;
+      place-items: center;
+    }
+
+    section.scoreboard .score p:nth-child(1){
+      color: hsl(229, 64%, 46%);
+      letter-spacing: .2rem;
+      margin-top: 10px;
+    }
+
+    section.scoreboard .score p:nth-child(2){
+      color: hsl(229, 25%, 31%);
+      font-size: 3rem;
+      margin-top: -10px;
+    }
+
+    section.gameplay{
+      background-image: url('./images/bg-pentagon.svg');
+      background-repeat: no-repeat;   
+      width: 100%;
+      height: auto;
+
+
+    }
+
+    section.gameplay button{
+      padding: 1rem;
+      border-radius: 3rem;
+      border: 4px solid;
+    }
+
+    button.scissors{
+      border-radius: 3rem;
+    }
+
+    .scissors{
+      background-image: linear-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+      width: min-content;
+      border-radius: 4rem;
+      padding: 1rem;
+    }
+
+    .spock{
+      background-image: linear-gradient(hsl(189, 59%, 53%), hsl(189, 58%, 57%));
+      width: min-content;
+      border-radius: 4rem;
+      padding: 1rem;
+    }
+
+    .paper{
+      background-image: linear-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%) );
+      width: min-content;
+      border-radius: 4rem;
+      padding: 1rem;
+    }
+
+    .lizard{
+      background-image: linear-gradient(hsl(261, 73%, 60%), hsl(261, 72%, 63%) );
+      width: min-content;
+      border-radius: 4rem;
+      padding: 1rem;
+    }
+
+    .rock{
+      background-image: linear-gradient(hsl(349, 71%, 52%),hsl(349, 70%, 56%));
+      width: min-content;
+      border-radius: 4rem;
+      padding: 1rem;
+    }
+
+    .middle{
+      display: flex;
+    }
+    .bottom{
+      display: flex;
+    }
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
